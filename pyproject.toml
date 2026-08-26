@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "order-risk-engine"
+version = "0.1.0"
+description = "Decimal-only, exchange-neutral pre-trade sizing and portfolio risk gates."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Artem Prianishnikov" }]
+keywords = ["trading", "risk", "position-sizing", "decimal", "portfolio"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Office/Business :: Financial"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/FrankFMY/order-risk-engine"
+Repository = "https://github.com/FrankFMY/order-risk-engine"
+Issues = "https://github.com/FrankFMY/order-risk-engine/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/order_risk_engine"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
