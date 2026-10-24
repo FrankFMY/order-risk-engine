@@ -9,7 +9,7 @@ description = "Decimal-only, exchange-neutral pre-trade sizing and portfolio ris
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-authors = [{ name = "Artem Prianishnikov" }]
+authors = [{ name = "Artem Prianishnikov", email = "Pryanishnikovartem@gmail.com" }]
 keywords = ["trading", "risk", "position-sizing", "decimal", "portfolio"]
 classifiers = [
   "Development Status :: 3 - Alpha",
